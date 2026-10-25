@@ -1,0 +1,17 @@
+{
+  "questions": 30,
+  "results": {
+    "b1": {
+      "answerable": 20,
+      "unanswerable": 10,
+      "correct_rate": 0.8421052631578947,
+      "citation_support_rate": 0.8333333333333334,
+      "citation_rule_pass_rate": 0.8947368421052632,
+      "over_refusal_rate": 0.05,
+      "refusal_rate_unanswerable": 1.0,
+      "hit@5": 0.85,
+      "avg_latency_s": 11.973,
+      "errors": 1
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "documents": {
+    "total": 155,
+    "with_clause": 103,
+    "without_clause": 52,
+    "characters_total": 1454571,
+    "characters_avg": 9384.3,
+    "characters_min": 493,
+    "characters_max": 176217,
+    "by_group": {
+      "专项安全制度": 69,
+      "专项法律法规": 51,
+      "综合法律法规": 16,
+      "综合安全制度": 14,
+      "应急预案": 5
+    },
+    "by_text_source": {
+      "pdf_text_layer": 63,
+      "web_page": 63,
+      "ocr_vision": 13,
+      "ocr_rapidocr_local": 13,
+      "ocr_vision+rapidocr": 3
+    },
+    "attachments_total": 106
+  },
+  "chunks": {
+    "total": 4976,
+    "clause": 3780,
+    "paragraph": 1196,
+    "characters_avg": 299.1,
+    "characters_max": 1200,
+    "by_confidence": {
+      "1.0": 2368,
+      "0.9": 1646,
+      "0.6": 566,
+      "0.7": 281,
+      "0.75": 115
+    }
+  },
+  "sections": {
+    "综合法律法规": 16,
+    "专项法律法规 / 实验室技术安全": 15,
+    "专项安全制度 / 实验室技术安全": 14,
+    "综合安全制度": 14,
+    "专项法律法规 / 特种设备安全": 10,
+    "专项安全制度 / 生产安全": 9,
+    "专项安全制度 / 外委施工安全": 6,
+    "专项安全制度 / 校舍安全": 6,
+    "专项法律法规 / 消防安全": 5,
+    "专项法律法规 / 食品和水安全": 5,
+    "应急预案": 5,
+    "专项安全制度 / 消防安全": 4,
+    "专项安全制度 / 医疗卫生安": 3,
+    "专项安全制度 / 基本建设项目安全": 3,
+    "专项安全制度 / 本科生安全": 3
+  },
+  "errors": [],
+  "config": {
+    "corpus_dir": "D:\\ClaudeCodeWorkSpace\\自然语言处理大作业\\学校规章制度",
+    "chunk_size": 600,
+    "chunk_overlap": 100,
+    "limit": null
+  }
+}

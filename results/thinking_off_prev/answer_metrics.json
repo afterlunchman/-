@@ -1,0 +1,53 @@
+{
+  "questions": 30,
+  "results": {
+    "b0": {
+      "answerable": 20,
+      "unanswerable": 10,
+      "correct_rate": 0.35,
+      "citation_support_rate": 0.23076923076923078,
+      "citation_rule_pass_rate": 0.0,
+      "over_refusal_rate": 0.35,
+      "refusal_rate_unanswerable": 0.5,
+      "hit@5": 0.0,
+      "avg_latency_s": 4.131233333333333,
+      "errors": 0
+    },
+    "b1": {
+      "answerable": 20,
+      "unanswerable": 10,
+      "correct_rate": 0.85,
+      "citation_support_rate": 0.8947368421052632,
+      "citation_rule_pass_rate": 0.7894736842105263,
+      "over_refusal_rate": 0.05,
+      "refusal_rate_unanswerable": 1.0,
+      "hit@5": 0.85,
+      "avg_latency_s": 2.1401666666666666,
+      "errors": 0
+    },
+    "b3": {
+      "answerable": 20,
+      "unanswerable": 10,
+      "correct_rate": 0.8,
+      "citation_support_rate": 0.9375,
+      "citation_rule_pass_rate": 0.9375,
+      "over_refusal_rate": 0.2,
+      "refusal_rate_unanswerable": 1.0,
+      "hit@5": 0.8,
+      "avg_latency_s": 2.076233333333333,
+      "errors": 0
+    },
+    "b5": {
+      "answerable": 20,
+      "unanswerable": 10,
+      "correct_rate": 0.85,
+      "citation_support_rate": 0.8421052631578947,
+      "citation_rule_pass_rate": 0.8421052631578947,
+      "over_refusal_rate": 0.05,
+      "refusal_rate_unanswerable": 1.0,
+      "hit@5": 0.95,
+      "avg_latency_s": 8.287066666666666,
+      "errors": 0
+    }
+  }
+}

@@ -1,0 +1,76 @@
+# ============================================================
+# 学校规章制度问答助手 · 配置模板
+# 复制为 config.yaml 后填写；config.yaml 已被 .gitignore 排除。
+#
+# 支持环境变量覆盖（优先级高于文件）：
+#   LLM_BASE_URL / LLM_API_KEY / LLM_MODEL
+# ============================================================
+
+llm:
+  # OpenAI 兼容接口。常用示例：
+  #   DeepSeek   base_url: https://api.deepseek.com/v1
+  #              model:    deepseek-chat
+  #   阿里百炼    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  #              model:    qwen-plus
+  #   智谱 GLM   base_url: https://open.bigmodel.cn/api/paas/v4
+  #              model:    glm-4-flash
+  base_url: ""
+  api_key: ""
+  model: ""
+  temperature: 0.1
+  max_tokens: 1024
+  timeout: 60
+  max_retries: 3
+  extra_body: {"enable_thinking": false}   # Qwen 非思考模式；其他网关可改为 {}
+
+embedding:
+  provider: "local"                  # local | api
+  model: "BAAI/bge-small-zh-v1.5"    # 可升级为 BAAI/bge-m3（更大更慢）
+  device: "cpu"                      # cpu | cuda
+  batch_size: 16
+  normalize: true
+  # provider=api 时填写
+  api_base_url: ""
+  api_key: ""
+  api_model: ""
+
+rerank:
+  enabled: true
+  provider: "local"                  # local | api | none
+  model: "BAAI/bge-reranker-base"
+  device: "cpu"
+  top_n: 5
+  api_base_url: ""
+  api_key: ""
+  api_model: ""
+
+retrieval:
+  top_k: 10
+  chunk_size: 600                    # 仅用于无条号制度的段落回退
+  chunk_overlap: 100
+  fusion: "rrf"                      # rrf | weighted
+  rrf_k: 60
+  min_score: 0.0                     # 拒答阈值，跑完评测集后校准
+
+generation:
+  require_citation: true
+  refuse_when_insufficient: true
+  max_context_chunks: 5
+  citation_format: "[制度名 第X条]"
+
+paths:
+  corpus_dir: "学校规章制度"
+  index_dir: "data/index"
+  eval_set: "data/eval/questions.jsonl"
+  results_dir: "results"
+  log_dir: "logs"
+
+evaluation:
+  judge_model: ""                    # 留空则复用 llm.model
+  human_sample_rate: 0.3
+  seed: 42
+
+app:
+  title: "校园安全制度问答助手"
+  port: 8501
+  show_retrieval_debug: true
